@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — KYRO</title>
+  <meta name="description" content="Reach the KYRO team on Discord for live support, or by email — freeffiremaxx1@gmail.com." />
+  <meta name="theme-color" content="#050505" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact — KYRO" />
+  <meta property="og:description" content="Reach the KYRO team on Discord or by email." />
+  <meta property="og:url" content="https://kyro.software/contact.html" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader-mark">KYRO<span class="loader-bar"></span></div>
+  </div>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><span class="dot"></span>KYRO</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="downloads.html" class="nav-link">Downloads</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="signal-grid"></div>
+      <div class="hero-glow hero-glow-1" style="width:420px;height:420px;top:-140px;"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></div>
+        <h1 class="text-gradient">Let's talk</h1>
+        <p>Reach us on Discord, drop an email, or send a message directly below.</p>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container">
+        <div class="contact-channels">
+
+          <a href="https://discord.gg/dYG78q8ur" target="_blank" rel="noopener noreferrer"
+             class="channel-card glow-border reveal" aria-label="Join the KYRO Discord server (opens in a new tab)">
+            <div class="channel-icon channel-icon-discord"><i class="fa-brands fa-discord"></i></div>
+            <h3>Join our Discord</h3>
+            <p>Get live support, talk to the team, and hang out with the community.</p>
+            <span class="channel-cta">Open Discord Invite <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+          <a href="mailto:freeffiremaxx1@gmail.com"
+             class="channel-card glow-border reveal reveal-delay-1" aria-label="Email KYRO at freeffiremaxx1@gmail.com">
+            <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+            <h3>Email Us</h3>
+            <p>Prefer email? Send us a message and we'll reply within 24 hours.</p>
+            <span class="channel-cta">freeffiremaxx1@gmail.com <i class="fa-solid fa-paper-plane"></i></span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container">
+        <div class="section-head centered reveal">
+          <div class="eyebrow" style="justify-content:center;width:100%;">Send a Message</div>
+          <h2 class="section-title">Prefer to write it out?</h2>
+          <p class="section-desc">Fill in the form below and the KYRO team will get back to you.</p>
+        </div>
+
+        <form class="contact-form glow-border reveal" id="contactForm" novalidate>
+          <div class="form-group floating">
+            <input type="text" id="name" name="name" placeholder=" " autocomplete="name" required />
+            <label for="name">Name</label>
+            <span class="form-error"></span>
+          </div>
+
+          <div class="form-group floating">
+            <input type="email" id="email" name="email" placeholder=" " autocomplete="email" required />
+            <label for="email">Email</label>
+            <span class="form-error"></span>
+          </div>
+
+          <div class="form-group floating">
+            <textarea id="message" name="message" placeholder=" " required></textarea>
+            <label for="message">Message</label>
+            <span class="form-error"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="contactSubmit">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+
+          <div class="form-status" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-newsletter reveal">
+        <div>
+          <h3>Stay in the loop</h3>
+          <p>Product updates and release notes, straight to your inbox. No spam, unsubscribe any time.</p>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" aria-label="Email address" required />
+          <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><span class="dot"></span>KYRO</a>
+          <p>Premium software engineered for speed, security, and an experience that feels effortless.</p>
+          <div class="footer-socials">
+            <a href="https://discord.gg/dYG78q8ur" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="KYRO Discord (opens in a new tab)"><i class="fa-brands fa-discord"></i></a>
+            <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Report a Bug</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="mailto:freeffiremaxx1@gmail.com">freeffiremaxx1@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 KYRO. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+
+  <!-- ==========================================================
+       Contact form handler — page-local, so no other page is
+       affected. Prepared for a real backend / email service:
+
+       1. Set CONTACT_ENDPOINT below to your backend or form
+          service URL (e.g. Formspree, EmailJS, a custom API
+          route). The form will POST { name, email, message }
+          as JSON and show the success/error state based on the
+          response.
+       2. Until CONTACT_ENDPOINT is set, the form falls back to
+          opening the visitor's email client with a pre-filled
+          message to CONTACT_EMAIL, so it stays fully functional
+          on a static host with no backend.
+       ========================================================== -->
+  <script>
+    const CONTACT_ENDPOINT = ""; // ← paste your backend/email-service URL here
+    const CONTACT_EMAIL = "freeffiremaxx1@gmail.com";
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('contactForm');
+      if (!form) return;
+
+      const status = form.querySelector('.form-status');
+      const submitBtn = document.getElementById('contactSubmit');
+      const submitLabel = submitBtn ? submitBtn.innerHTML : '';
+
+      function setLoading(isLoading) {
+        if (!submitBtn) return;
+        submitBtn.classList.toggle('is-loading', isLoading);
+        submitBtn.innerHTML = isLoading
+          ? '<i class="fa-solid fa-circle-notch"></i> Sending...'
+          : submitLabel;
+      }
+
+      function showStatus(message, isError) {
+        if (!status) return;
+        status.classList.toggle('error', !!isError);
+        status.classList.add('visible');
+        status.innerHTML = `<i class="fa-solid ${isError ? 'fa-circle-exclamation' : 'fa-circle-check'}"></i> ${message}`;
+      }
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        status?.classList.remove('visible', 'error');
+
+        let valid = true;
+        const fields = { name: '', email: '', message: '' };
+
+        form.querySelectorAll('[required]').forEach((field) => {
+          const errorEl = field.closest('.form-group').querySelector('.form-error');
+          const value = field.value.trim();
+          let message = '';
+
+          if (!value) {
+            message = 'This field is required.';
+          } else if (field.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+            message = 'Enter a valid email address.';
+          }
+
+          if (errorEl) errorEl.textContent = message;
+          field.style.borderColor = message ? 'var(--danger)' : '';
+          if (message) valid = false;
+          if (field.name in fields) fields[field.name] = value;
+        });
+
+        if (!valid) return;
+
+        setLoading(true);
+
+        if (CONTACT_ENDPOINT) {
+          // Real backend / email-service path.
+          try {
+            const res = await fetch(CONTACT_ENDPOINT, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(fields)
+            });
+            if (!res.ok) throw new Error('Request failed');
+            showStatus('Message sent — the KYRO team will reply soon.');
+            form.reset();
+          } catch (err) {
+            showStatus('Something went wrong — please try again or email us directly.', true);
+          } finally {
+            setLoading(false);
+          }
+        } else {
+          // No backend configured yet — fall back to a pre-filled email
+          // so the form is genuinely functional today.
+          const subject = encodeURIComponent(`Message from ${fields.name} via kyro.software`);
+          const body = encodeURIComponent(`${fields.message}\n\n— ${fields.name} (${fields.email})`);
+          window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+          showStatus('Opening your email app to finish sending...');
+          setLoading(false);
+          form.reset();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

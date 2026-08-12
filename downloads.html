@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Downloads — KYRO Software Center</title>
+  <meta name="description" content="Download center for KYRO — grab the latest software, all in one place." />
+  <meta name="theme-color" content="#050505" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Downloads — KYRO Software Center" />
+  <meta property="og:description" content="Download center for KYRO software." />
+  <meta property="og:url" content="https://kyro.software/downloads.html" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader-mark">KYRO<span class="loader-bar"></span></div>
+  </div>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><span class="dot"></span>KYRO</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="downloads.html" class="nav-link">Downloads</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="signal-grid"></div>
+      <div class="hero-glow hero-glow-1" style="width:420px;height:420px;top:-140px;"></div>
+      <div class="container" style="position:relative;z-index:1;">
+        <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Downloads</span></div>
+        <h1 class="text-gradient">Download Center</h1>
+        <p>Every KYRO build, signed and ready. Pick your software, grab the latest version, and get moving.</p>
+      </div>
+    </section>
+
+    <section class="section section-tight" id="downloads-grid">
+      <div class="container">
+        <div class="downloads-toolbar reveal">
+          <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search software..." aria-label="Search software" />
+          </div>
+          <div class="filter-chips">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="game">Game</button>
+            <button class="chip" data-filter="utility">Utility</button>
+          </div>
+        </div>
+
+        <div class="downloads-grid" id="downloadsGrid">
+
+          <!-- Cards below are generated automatically from /data/downloads.js
+               by js/downloads-render.js — do not hand-edit this section. -->
+
+          <div class="no-results">
+            <i class="fa-solid fa-satellite-dish"></i>
+            <p>No software matches your search.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-newsletter reveal">
+        <div>
+          <h3>Stay in the loop</h3>
+          <p>Product updates and release notes, straight to your inbox. No spam, unsubscribe any time.</p>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" aria-label="Email address" required />
+          <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><span class="dot"></span>KYRO</a>
+          <p>Premium software engineered for speed, security, and an experience that feels effortless.</p>
+          <div class="footer-socials">
+            <a href="https://discord.gg/dYG78q8ur" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="KYRO Discord (opens in a new tab)"><i class="fa-brands fa-discord"></i></a>
+            <a href="#" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Report a Bug</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="mailto:freeffiremaxx1@gmail.com">freeffiremaxx1@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 KYRO. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Downloads data + renderer must load BEFORE js/script.js so the
+       cards already exist in the DOM when scroll-reveal and the
+       search/filter toolbar initialize. To update the download list,
+       edit ONLY /data/downloads.js — nothing here needs to change. -->
+  <script src="data/downloads.js"></script>
+  <script src="js/downloads-render.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
